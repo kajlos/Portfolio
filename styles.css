@@ -4,3 +4,10 @@
 body {
   margin: 0;
 }
+.container {
+  width: min(80%, 60rem);
+  margin-inline: auto;
+}
+header {
+  background-color: red;
+}
