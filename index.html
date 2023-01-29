@@ -6,21 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>Portfolio</title>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header>
       <div class="container">
-        <nav>
+        <nav class="main-nav">
           <div class="flex">
             <img class="icon" src="./images/icon.svg" alt="icon" />
             <span>Kajetan</span>
           </div>
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+          <ul class="main-nav__list">
+            <li class="main-nav__list__item"><a href="#">About</a></li>
+            <li class="main-nav__list__item"><a href="#">Projects</a></li>
+            <li class="main-nav__list__item"><a href="#">Contact</a></li>
           </ul>
-          <button class="hamburger"></button>
+          <button class="main-nav__hamburger">
+            <span class="hamburger__line hamburger__line--first"></span>
+            <span class="hamburger__line hamburger__line--second"></span>
+            <span class="hamburger__line hamburger__line--third"></span>
+          </button>
         </nav>
       </div>
     </header>
