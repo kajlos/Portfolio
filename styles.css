@@ -89,6 +89,10 @@ a {
 }
 .main-nav__list__item {
   text-align: center;
+  transition: color 0.2s ease-in-out;
+}
+.main-nav__list__item:hover {
+  color: var(--yellow);
 }
 @media (min-width: 480px) {
   .main-nav__list {
@@ -123,9 +127,17 @@ a {
   color: var(--gray);
 }
 .btn {
+  display: inline-block;
   background-color: var(--yellow);
   padding: 1em 2em;
   border-radius: 0.5em;
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+}
+.btn:hover,
+.btn:focus {
+  scale: 1.1;
+  translate: 0 -5%;
 }
 .hero__credit {
   position: absolute;
@@ -136,8 +148,8 @@ a {
 }
 .skills {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
-  align-content: start;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+
   column-gap: 1rem;
   row-gap: 0.5rem;
 }
@@ -147,6 +159,14 @@ a {
 .skills__skill {
   display: grid;
   justify-items: center;
+  align-items: start;
+  box-shadow: var(--gray) 3px 3px 6px;
+  padding: 0.5em;
+  border-radius: 1em;
+  transition: scale 0.1s ease-in-out;
+}
+.skills__skill:hover {
+  scale: 1.1;
 }
 .skills__skill span {
   color: var(--gray);
