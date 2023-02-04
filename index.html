@@ -133,19 +133,20 @@
     </section>
     <section>
       <div class="container">
-        <form action="">
+        <form action="https://formsubmit.co/kajetan.loska@op.pl" method="POST">
           <div class="form__name">
             <label for="name">Name</label>
-            <input type="text" id="name" />
+            <input type="text" id="name" name="name" required />
           </div>
           <div class="form__email">
             <label for="email">E-mail</label>
-            <input type="email" id="email" />
+            <input type="email" id="email" name="email" required />
           </div>
           <div class="form__message">
             <label for="message">E-mail</label>
-            <textarea></textarea>
+            <textarea required name="message"></textarea>
           </div>
+          <button type="submit">Send</button>
         </form>
       </div>
     </section>
