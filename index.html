@@ -131,23 +131,33 @@
         </div>
       </div>
     </section>
-    <section>
+    <section class="form">
       <div class="container">
-        <form action="https://formsubmit.co/kajetan.loska@op.pl" method="POST">
-          <div class="form__name">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-          <div class="form__email">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="form__message">
-            <label for="message">E-mail</label>
-            <textarea required name="message"></textarea>
-          </div>
-          <button type="submit">Send</button>
-        </form>
+        <h2>Contact</h2>
+        <div class="form-container">
+          <form action="https://formsubmit.co/kajetan.loska@op.pl" method="POST">
+            <div class="form__group form__name">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" class="form__input" required />
+            </div>
+            <div class="form__group form__email">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form__input"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="form__group form__message">
+              <label for="message">Message</label>
+              <textarea required name="message" class="form__input" rows="10"></textarea>
+            </div>
+            <button class="btn" type="submit">Send</button>
+          </form>
+        </div>
       </div>
     </section>
   </body>

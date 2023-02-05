@@ -3,6 +3,7 @@
   --yellow: #ffc200;
   --black: #212121;
   --gray: #5b5b5b;
+  --background: #f0f0f0;
 }
 * {
   box-sizing: border-box;
@@ -21,7 +22,15 @@ svg {
 input,
 button,
 textarea {
-  font: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+textarea {
+  resize: none;
 }
 ul {
   list-style-type: none;
@@ -32,6 +41,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 .container {
   width: min(80%, 60rem);
   margin-inline: auto;
@@ -186,4 +196,26 @@ a {
   .about__text {
     line-height: 1.7;
   }
+}
+.form-container {
+  padding: 3em;
+}
+.form__group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5em;
+}
+.form__group > label {
+  margin-bottom: 0.5em;
+  display: inline-block;
+  color: var(--gray);
+}
+.form__input {
+  background-color: var(--background);
+  border-radius: 0.5em;
+  border: none;
+  padding: 1.4em;
+}
+.form__input:focus {
+  outline: none;
 }
