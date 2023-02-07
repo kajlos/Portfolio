@@ -46,10 +46,10 @@
         on Freepik
       </p>
     </section>
-    <section>
+    <section class="about-section">
       <div class="container about">
         <div>
-          <h2>About Me</h2>
+          <h2 class="section-title">About Me</h2>
           <p class="about__text">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam quas laudantium
             blanditiis quis maiores nesciunt earum, magnam sit nostrum sint.
@@ -64,7 +64,7 @@
           </p>
         </div>
         <div class="skills">
-          <h2 class="skills__title">My skills</h2>
+          <h2 class="section-title skills__title">My skills</h2>
           <div class="skills__skill">
             <img src="./images/html.svg" alt="html" /><span>HTML</span>
           </div>
@@ -82,9 +82,9 @@
         </div>
       </div>
     </section>
-    <section>
+    <section class="projects-section">
       <div class="container">
-        <h2>Projects</h2>
+        <h2 class="section-title">Projects</h2>
         <div class="projects-container">
           <div class="project__card">
             <div>
@@ -94,13 +94,14 @@
                 class="project__img"
               />
             </div>
-
             <div class="project__content">
-              <h3>Battleship</h3>
-              <p class="project__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quidem eum earum
-                vero maxime asperiores sit cupiditate beatae adipisci similique?
-              </p>
+              <div>
+                <h3 class="project__title">Battleship</h3>
+                <p class="project__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quidem eum
+                  earum vero maxime asperiores sit cupiditate beatae adipisci similique?
+                </p>
+              </div>
               <div class="project__links">
                 <a href="#" class="btn">Github</a><a href="#" class="btn">Live</a>
               </div>
@@ -116,11 +117,13 @@
             </div>
 
             <div class="project__content">
-              <h3>Shopping Cart</h3>
-              <p class="project__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quidem eum earum
-                vero maxime asperiores sit cupiditate beatae adipisci similique?
-              </p>
+              <div>
+                <h3 class="project__title">Shopping Cart</h3>
+                <p class="project__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quidem eum
+                  earum vero maxime asperiores sit cupiditate beatae adipisci similique?
+                </p>
+              </div>
               <div class="project__links">
                 <a href="#" class="btn">Github</a><a href="#" class="btn">Live</a>
               </div>
@@ -135,11 +138,13 @@
               />
             </div>
             <div class="project__content">
-              <h3>Language Game</h3>
-              <p class="project__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quidem eum earum
-                vero maxime asperiores sit cupiditate beatae adipisci similique?
-              </p>
+              <div>
+                <h3 class="project__title">Language Game</h3>
+                <p class="project__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quidem eum
+                  earum vero maxime asperiores sit cupiditate beatae adipisci similique?
+                </p>
+              </div>
               <div class="project__links">
                 <a href="#" class="btn">Github</a><a href="#" class="btn">Live</a>
               </div>
@@ -155,11 +160,13 @@
             </div>
 
             <div class="project__content">
-              <h3>To-Do List</h3>
-              <p class="project__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quidem eum earum
-                vero maxime asperiores sit cupiditate beatae adipisci similique?
-              </p>
+              <div>
+                <h3 class="project__title">To-Do List</h3>
+                <p class="project__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quidem eum
+                  earum vero maxime asperiores sit cupiditate beatae adipisci similique?
+                </p>
+              </div>
               <div class="project__links">
                 <a href="#" class="btn">Github</a><a href="#" class="btn">Live</a>
               </div>
@@ -168,9 +175,9 @@
         </div>
       </div>
     </section>
-    <section class="form">
+    <section class="form-section">
       <div class="container">
-        <h2>Contact</h2>
+        <h2 class="section-title contact-title">Contact</h2>
         <div class="form-container">
           <form action="https://formsubmit.co/kajetan.loska@op.pl" method="POST">
             <div class="form__group form__name">
@@ -190,7 +197,13 @@
             </div>
             <div class="form__group form__message">
               <label for="message">Message</label>
-              <textarea required name="message" class="form__input" rows="10"></textarea>
+              <textarea
+                required
+                name="message"
+                id="message"
+                class="form__input"
+                rows="10"
+              ></textarea>
             </div>
             <button class="btn" type="submit">Send</button>
           </form>
