@@ -60,6 +60,7 @@ h3 {
 .btn {
   display: inline-block;
   background-color: var(--yellow);
+
   padding: 1em 2em;
   border-radius: 0.5em;
   font-weight: bold;
@@ -167,6 +168,7 @@ h3 {
 
 .hero__credit {
   position: absolute;
+  font-size: 0.6rem;
   padding: 0;
   margin: 0;
   bottom: 0;
@@ -214,7 +216,9 @@ h3 {
     line-height: 1.7;
   }
 }
-
+.projects-section {
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+}
 .projects-container {
   display: flex;
   flex-direction: column;
@@ -234,7 +238,10 @@ h3 {
 .project__description {
   margin: 0;
 }
-
+.project__links {
+  display: flex;
+  gap: 0.5rem;
+}
 @media (min-width: 900px) {
   .project__card {
     display: grid;
@@ -274,10 +281,11 @@ h3 {
   background-color: var(--background);
   border-radius: 0.5em;
   border: none;
+  outline: none;
   padding: 1.4em;
 }
 .form__input:focus {
-  outline: none;
+  outline: 2px solid var(--yellow);
 }
 @media (min-width: 480px) {
   .form-container {
