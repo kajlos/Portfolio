@@ -9,7 +9,7 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
         <nav class="main-nav">
           <div class="main-nav__icon">
@@ -17,9 +17,9 @@
             <span>Kajetan</span>
           </div>
           <ul class="main-nav__list">
-            <li class="main-nav__list__item"><a href="#">About</a></li>
-            <li class="main-nav__list__item"><a href="#">Projects</a></li>
-            <li class="main-nav__list__item"><a href="#">Contact</a></li>
+            <li class="main-nav__list__item"><a href="#about">About</a></li>
+            <li class="main-nav__list__item"><a href="#projects">Projects</a></li>
+            <li class="main-nav__list__item"><a href="#form">Contact</a></li>
           </ul>
           <button class="main-nav__hamburger">
             <span class="hamburger__line hamburger__line--first"></span>
@@ -44,7 +44,7 @@
       </p>
     </section>
     <main>
-      <section class="about-section">
+      <section class="about-section" id="about">
         <div class="container about">
           <div>
             <h2 class="section-title">About Me</h2>
@@ -84,7 +84,7 @@
           </div>
         </div>
       </section>
-      <section class="projects-section">
+      <section class="projects-section" id="projects">
         <div class="container">
           <h2 class="section-title">Projects</h2>
           <div class="projects-container">
@@ -190,7 +190,7 @@
           </div>
         </div>
       </section>
-      <section class="form-section">
+      <section class="form-section" id="form">
         <div class="container">
           <h2 class="section-title contact-title">Contact</h2>
           <div class="form-container">
