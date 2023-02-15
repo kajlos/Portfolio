@@ -229,6 +229,7 @@ h3 {
 }
 .about__text {
   color: var(--gray);
+  font-size: 1.2rem;
 }
 
 @media (min-width: 900px) {
@@ -264,6 +265,7 @@ h3 {
 }
 .project__description {
   margin: 0;
+  font-size: 1.2rem;
 }
 .project__links {
   display: flex;
